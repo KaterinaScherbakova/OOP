@@ -19,6 +19,9 @@ public class Main {
         //сравним две коробки
         box25.compare(box3);
         System.out.println("сравнение методом compareReturnInt "+box25.compareReturnInt(box3));
+        // copy
+        Box copyBox = box3.copyBox();
+        System.out.println("скоприровали коробку"+copyBox.getVolume());
 
         // задача с собаками
         System.out.println("\nИз задачи с собаками, класс DogsClass:");

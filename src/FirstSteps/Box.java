@@ -65,4 +65,10 @@ public class Box {
             return 0;
         }
     }
+    // метод создания копии коробки
+    Box copyBox(){
+        return new Box(this.length, this.width, this.height);
+    }
+
+
 }
