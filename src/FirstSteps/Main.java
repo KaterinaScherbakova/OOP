@@ -1,22 +1,24 @@
 package FirstSteps;
 
-import javax.swing.*;
-
 public class Main {
     public static void main(String[] args) {
         System.out.println("Из задачи с коробками, класс BoxClass:");
-        BoxClass box1 = new BoxClass(10, 10, 10);
+        Box box1 = new Box(10, 10, 10);
 
-        BoxClass box2 = new BoxClass(40, 50, 60);
+        Box box2 = new Box(40, 50, 60);
         box2.showVolume();
 
         System.out.println(box1.getVolume());
 
-        BoxClass box3 = new BoxClass(30.5);
+        Box box3 = new Box(30.5);
         box3.showVolume();
 
-        BoxClass box25 = new BoxClass();
+        Box box25 = new Box();
         box25.showVolume();
+
+        //сравним две коробки
+        box25.compare(box3);
+        System.out.println("сравнение методом compareReturnInt "+box25.compareReturnInt(box3));
 
         // задача с собаками
         System.out.println("\nИз задачи с собаками, класс DogsClass:");
