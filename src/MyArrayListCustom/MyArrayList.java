@@ -1,4 +1,4 @@
-package MyArrayList;
+package MyArrayListCustom;
 
 import java.util.Objects;
 
