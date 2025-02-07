@@ -4,8 +4,10 @@ public class Lion extends CatFamily{
     public Lion(){
         super(4,2,false);
     }
+    @Override
     public void eat(){
-        System.out.println("Кушаю антилопу");
+        super.eat();
+        System.out.println("антилопу");
     }
 
 }

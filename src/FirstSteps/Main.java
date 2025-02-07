@@ -43,5 +43,13 @@ public class Main {
         System.out.println("\nИз задачи с прямоугольником, класс Employee:");
         Employee newEmployee = new Employee("Li", "QA", 30);
         newEmployee.showInfo();
+
+        // задача с наследуемой коробкой с весом, WeightBox:
+        System.out.println("\n задача с наследуемой коробкой с весом, WeightBox:");
+        WeightBox boxWeight1 = new WeightBox(10,15,20,9);
+        boxWeight1.showInfo();
+
     }
+
+
 }

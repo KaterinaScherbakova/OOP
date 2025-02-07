@@ -26,4 +26,10 @@ public class Person {
     public int getAge() {
         return age;
     }
+
+    //переопределим метод toString, наследуемый у всех объектов от Object
+    @Override
+    public String toString() {
+        return String.format("Name: %s Age: %s",name,age);
+    }
 }

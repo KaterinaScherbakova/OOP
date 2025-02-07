@@ -70,5 +70,9 @@ public class Box {
         return new Box(this.length, this.width, this.height);
     }
 
+    public void showInfo(){
+        String output = String.format("length=%f / width=%f / height=%f", this.length, this.width, this.height);
+        System.out.printf(output);
+    }
 
 }
